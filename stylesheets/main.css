@@ -1,3 +1,4 @@
+/* Desktop */
 * {
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
@@ -19,18 +20,6 @@ a:hover {
 	justify-content: center;
 }
 
-@media (max-width: 1000px) {
-	#flexbox-container {
-		flex-direction: column;
-	}
-}
-
-@media (max-height: 700px) {
-	#flexbox-container {
-		margin-top: 45px;
-	}
-}
-
 #flexbox-left {
 	margin-left: 0;
 	margin-right: 50px;
@@ -40,43 +29,6 @@ a:hover {
 	margin-left: 50px;
 	margin-top: 120px;
 	margin-right: 400px;
-}
-
-@media (max-width: 1600px) {
-	#flexbox-right {
-		margin-right: 200px;
-	}
-}
-
-@media (max-width: 1400px) {
-	#flexbox-left {
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	#flexbox-right {
-		margin-right: 100px;
-	}
-}
-
-@media (max-width: 1000px) {
-	#flexbox-left {
-		margin-left: 30px;
-		margin-right: 0;
-	}
-
-	#flexbox-right {
-		margin-top: 40px;
-		margin-right: 0;
-	}
-}
-
-@media (max-width: 600px) {
-	#flexbox-right {
-		margin-left: 30px;
-		margin-top: 40px;
-		margin-right: 0;
-	}
 }
 
 #title {
@@ -91,41 +43,82 @@ a:hover {
 	margin-bottom: 40px;
 }
 
-@media (max-width: 1600px) {
-	#title {
-		font-size: 135px;
+/* Compact desktop */
+@media (max-width: 1500px) {
+	#flexbox-left {
+		margin-right: 30px;
+	}
+	
+	#flexbox-right {
+		margin-left: 30px;
+		margin-right: 0;
 	}
 
-	.link {
-		font-size: 70px;
-	}
-}
-
-@media (max-width: 1400px) {
 	#title {
-		font-size: 120px;
+		font-size: 90px;
 	}
 
 	.link {
 		font-size: 60px;
 	}
+
+	/* Move links up on shorter displays */
+	@media (max-height: 750px) {
+		#flexbox-right {
+			margin-top: 60px;
+		}
+	}
 }
 
-@media (max-width: 1000px) {
+/* Mobile */
+@media (max-width: 800px) {
+	#flexbox-container {
+		flex-direction: column;
+	}
+
+	#flexbox-left {
+		margin-left: 40px;
+		margin-right: 0;
+	}
+	
+	#flexbox-right {
+		margin-left: 60px;
+	}
+
 	#title {
-		font-size: 100px;
+		font-size: 90px;
 	}
 
 	.link {
-		font-size: 70px;
+		font-size: 60px;
+	}
+
+	/* Move links up on shorter displays */
+	@media (max-height: 750px) {
+		#flexbox-right {
+			margin-top: 60px;
+		}
 	}
 }
 
-@media (max-width: 600px) {
+/* Compact mobile */
+@media (max-width: 400px) {
+	#flexbox-container {
+		margin-top: 40px;
+	}
+
+	#flexbox-left {
+		margin-left: 30px;
+	}
+	
+	#flexbox-right {
+		margin-top: 60px;
+	}
+
 	#title {
 		font-size: 80px;
 	}
-
+	
 	.link {
 		font-size: 50px;
 		margin-bottom: 30px;
