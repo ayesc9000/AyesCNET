@@ -15,58 +15,66 @@ a:hover {
 
 #flexbox-container {
 	display: flex;
-	flex-direction: row;
-	margin-top: 80px;
 	justify-content: center;
+	height: 100vh;
 }
 
 #flexbox-left {
-	margin-left: 0;
-	margin-right: 50px;
+	display: flex;
+	justify-content: end;
+	align-items: flex-end;
 }
 
 #flexbox-right {
-	margin-left: 50px;
-	margin-top: 120px;
-	margin-right: 400px;
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-left: 5rem;
+	padding-right: 6rem;
+	padding-top: 2rem;
 }
 
 #title {
 	font-weight: 900;
-	font-size: 150px;
+	font-size: 8rem;
 }
 
 .link {
 	display: block;
 	font-weight: 700;
-	font-size: 80px;
+	font-size: 5rem;
 	margin-bottom: 40px;
 }
 
-/* Compact desktop */
-@media (max-width: 1500px) {
-	#flexbox-left {
-		margin-right: 30px;
-	}
-	
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: #00000000; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #dadada; 
+	border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #c7c7c7; 
+}
+
+/* Compact */
+@media (max-width: 1080px) {
 	#flexbox-right {
-		margin-left: 30px;
-		margin-right: 0;
+		padding-left: 3rem;
+		padding-right: 0rem;
 	}
 
 	#title {
-		font-size: 90px;
+		font-size: 6rem;
 	}
 
 	.link {
-		font-size: 60px;
-	}
-
-	/* Move links up on shorter displays */
-	@media (max-height: 750px) {
-		#flexbox-right {
-			margin-top: 60px;
-		}
+		font-size: 4rem;
 	}
 }
 
@@ -74,53 +82,25 @@ a:hover {
 @media (max-width: 800px) {
 	#flexbox-container {
 		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 	}
 
 	#flexbox-left {
-		margin-left: 40px;
-		margin-right: 0;
+		justify-content: center;
 	}
 	
 	#flexbox-right {
-		margin-left: 60px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	#title {
-		font-size: 90px;
-	}
-
-	.link {
-		font-size: 60px;
-	}
-
-	/* Move links up on shorter displays */
-	@media (max-height: 750px) {
-		#flexbox-right {
-			margin-top: 60px;
-		}
-	}
-}
-
-/* Compact mobile */
-@media (max-width: 400px) {
-	#flexbox-container {
-		margin-top: 40px;
-	}
-
-	#flexbox-left {
-		margin-left: 30px;
-	}
-	
-	#flexbox-right {
-		margin-top: 60px;
-	}
-
-	#title {
-		font-size: 80px;
+		font-size: 5rem;
 	}
 	
 	.link {
-		font-size: 50px;
-		margin-bottom: 30px;
+		font-size: 3rem;
+		padding-left: 2rem;
 	}
 }
