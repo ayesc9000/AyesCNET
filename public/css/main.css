@@ -1,0 +1,95 @@
+/* -- Global -- */
+
+html, body {
+	color: #DDD;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Garamond, serif;
+	font-size: 18px;
+}
+
+hr {
+	border: 2px solid #333;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+a {
+	color: #FFF;
+}
+
+a:hover {
+	color: #7dc2f7;
+}
+
+/* -- Navbox -- */
+
+#navbox, #navbox-title .navbox-item {
+	font-family: Consolas, monospace;
+}
+
+#navbox {
+	background-color: #1c1c1c;
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	float: left;
+}
+
+#navbox-list {
+	margin: 0;
+	padding: 15px;
+	display: block;
+	list-style-type: none;
+	overflow: auto;
+}
+
+#navbox-title {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	display: block;
+	font-size: 44px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navbox-item {
+	margin-left: 16px;
+	margin-bottom: 18px;
+	font-size: 18px;
+}
+
+/* -- Content -- */
+
+#container {
+	margin-left: 250px;
+	overflow: auto;
+}
+
+#content {
+	max-width: 950px;
+	margin: auto;
+	padding: 50px;
+}
+
+#content-title {
+	margin-top: 30px;
+	margin-bottom: 100px;
+	display: block;
+	text-align: center;
+	font-size: 55px;
+	font-weight: 800;
+}
+
+/* -- Footer -- */
+
+#footer-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 35px;
+	text-align: center;
+}

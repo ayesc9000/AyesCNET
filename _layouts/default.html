@@ -1,0 +1,27 @@
+<!-- 
+	Copyright (C) Liam "AyesC" Hogan 2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page.title }} - AyesC</title>
+	{% include header.html %}
+</head>
+<body>
+	{% include navbox.html %}
+
+	<div id="container">
+		<div id="content">
+			<span id="content-title">{{ page.title }}</span>
+			<hr>
+	
+			{{ content }}
+	
+			<hr>
+			
+			{% include footer.html %}
+		</div>
+	</div>
+</body>
+</html>

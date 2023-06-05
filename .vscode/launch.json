@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Start Jekyll",
+			"console": "integratedTerminal",
+			"runtimeExecutable": "jekyll",
+			"args": ["serve"],
+			"env": {
+				"CF_PAGES_COMMIT_SHA": "Not applicable",
+				"CF_PAGES_DEPLOY_LOC": "Local VS Code debugging session"
+			}
+		}
+	]
+}

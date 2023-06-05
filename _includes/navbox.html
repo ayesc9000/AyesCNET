@@ -1,0 +1,11 @@
+<div id="navbox">
+	<a id="navbox-title" href="/">AyesC</a>
+
+	<ul id="navbox-list">
+		{% for page in site.data.pages %}
+		<li class="navbox-item">
+			<a href="{{ page.url }}">{{ page.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
