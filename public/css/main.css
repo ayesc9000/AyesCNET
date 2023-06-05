@@ -1,5 +1,18 @@
 /* -- Global -- */
 
+@font-face {
+	font-family: "Merriweather";
+	src: url('/public/fonts/Merriweather-Regular.ttf');
+	src: url('/public/fonts/Merriweather-Regular.ttf'),
+		 url('/public/fonts/Merriweather-Black.ttf'),
+		 url('/public/fonts/Merriweather-BlackItalic.ttf'),
+		 url('/public/fonts/Merriweather-Bold.ttf'),
+		 url('/public/fonts/Merriweather-BoldItalic.ttf'),
+		 url('/public/fonts/Merriweather-Italic.ttf'),
+		 url('/public/fonts/Merriweather-Light.ttf'),
+		 url('/public/fonts/Merriweather-LightItalic.ttf');
+  }
+
 html, body {
 	color: #DDD;
 	background-color: #000;
@@ -8,8 +21,8 @@ html, body {
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: Garamond, serif;
-	font-size: 18px;
+	font-family: Merriweather, serif;
+	font-size: 14px;
 }
 
 hr {

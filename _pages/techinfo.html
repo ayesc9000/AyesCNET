@@ -1,0 +1,40 @@
+---
+permalink: /techinfo
+layout: default
+title: Technical Info
+---
+
+<p>Jekyll build and deployment info:</p>
+
+<table>
+	<tr>
+		<td><b>Built on</b></td>
+		<td><code>{{ site.time }}</code></td>
+	</tr>
+	<tr>
+		<td><b>Git repository</b></td>
+		<td><code>{{ site.repo }}</code></td>
+	</tr>
+	<tr>
+		<td><b>Git branch</b></td>
+		<td><code>{{ site.env.CF_PAGES_BRANCH }}</code></td>
+	</tr>
+	<tr>
+		<td><b>Git commit SHA1</b></td>
+		<td><code>{{ site.env.CF_PAGES_COMMIT_SHA }}</code></td>
+	</tr>
+	<tr>
+		<td><b>Deployment target</b></td>
+		<td><code>{{ site.env.CF_PAGES_DEPLOY_LOC }}</code></td>
+	</tr>
+</table>
+
+<hr>
+<p>Third-party credits:</p>
+
+<ul>
+	<li>
+		<p>Merriweather font by Sorkin Type, provided by Google</p>
+		<a href="/public/licenses/Merriweather.txt">View License</a>
+	</li>
+</ul>
