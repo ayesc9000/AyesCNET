@@ -1,4 +1,6 @@
 <p id="footer-text">
 	© {{ site.data.branding.author }} 2023<br>
-	<a class="text-small" href="/techinfo">Technical info and third-party credits</a>
+	{% for page in site.data.footer %}
+	<a class="text-small" href="{{ page.url }}">{{ page.title }}</a>
+	{% endfor %}
 </p>
