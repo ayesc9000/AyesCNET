@@ -2,7 +2,6 @@
 
 @font-face {
 	font-family: "Merriweather";
-	src: url('/public/fonts/Merriweather-Regular.ttf');
 	src: url('/public/fonts/Merriweather-Regular.ttf'),
 		 url('/public/fonts/Merriweather-Black.ttf'),
 		 url('/public/fonts/Merriweather-BlackItalic.ttf'),
