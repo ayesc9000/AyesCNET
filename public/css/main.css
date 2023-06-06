@@ -10,7 +10,7 @@
 		 url('/public/fonts/Merriweather-Italic.ttf'),
 		 url('/public/fonts/Merriweather-Light.ttf'),
 		 url('/public/fonts/Merriweather-LightItalic.ttf');
-  }
+}
 
 html, body {
 	color: #DDD;
