@@ -2,6 +2,7 @@ title: AyesC
 author: Liam "AyesC" Hogan
 email: ayesc@ayesc.ca
 repo: https://github.com/ayesc9000/AyesCNET
+highlighter: rouge
 baseurl: ""
 url: "https://ayesc.ca"
 plugins:
