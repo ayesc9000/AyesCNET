@@ -34,3 +34,11 @@ end
 # the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+
+# CSV is no longer part of the standard library as of Ruby 3.4.0 and Jekyll has
+# not yet included it in their gemfile.
+gem 'csv', '~> 3.3'
+
+# Base64 is no longer part of the standard library as of Ruby 3.4.0 and Safe Yaml
+# has not yet included it in their gemfile.
+gem 'base64', '~> 0.2.0'
