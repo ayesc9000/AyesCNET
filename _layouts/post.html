@@ -8,6 +8,8 @@
 <head>
   <title>{{ page.title }} - {{ site.title }}</title>
   <link href="/public/css/main.css" rel="stylesheet">
+  <link href="/public/css/post.css" rel="stylesheet">
+  <meta charset="utf-8">
 </head>
 
 <body>
@@ -18,12 +20,8 @@
 
     <article>
       <h1>{{ page.title }}</h1>
-      <span id="content-date">Posted on {{ page.date | date: "%d/%m/%Y at %I:%M %p %Z" }}</span>
-      <div id="content-categories">
-        {% for category in page.categories %}
-        <span class="content-category">{{ category }}</span>
-        {% endfor %}
-      </div>
+      <span id="post-details">Published on {{ page.date | date: "%d/%m/%Y" }} under {{ page.category }}</span>
+      <span id="post-tagline">From the {{ page.tagline }} department:</span>
       {{ content }}
     </article>
   </main>
