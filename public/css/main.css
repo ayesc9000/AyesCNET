@@ -103,8 +103,7 @@ footer {
 }
 
 .navbtn {
-  float: left;
-  width: 20%;
+  width: 100%;
   padding-top: 7px;
   box-shadow: 0 0 5px inset #383838;
   background-color: #404343;
