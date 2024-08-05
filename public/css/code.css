@@ -59,7 +59,9 @@ code, .highlighter-rouge {
   color: #0000FF;
 }
 
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2,
+.highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr,
+.highlight .s1, .highlight .ss {
   color: #b85c05;
 }
 
