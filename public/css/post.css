@@ -1,5 +1,10 @@
+#post-title {
+  margin-bottom: 8px;
+}
+
 #post-details {
   display: block;
+  margin-bottom: 16px;
 }
 
 #post-tagline {
