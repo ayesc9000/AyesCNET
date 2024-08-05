@@ -4,6 +4,6 @@ layout: default
 title: Debugging information
 ---
 
-| **Built on**       | {{ site.time }}          |
+| **Build date**     | {{ site.time }}          |
 | **Git repository** | {{ site.repo }}          |
 | **Environment**    | {{ jekyll.environment }} |
