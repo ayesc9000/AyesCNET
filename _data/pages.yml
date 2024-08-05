@@ -1,10 +1,8 @@
-- title: About
-  url: /about
-- title: Resume
-  url: /resume
+- title: Home
+  url: /
+- title: Posts
+  url: /posts
 - title: Contact
   url: /contact
 - title: GitHub
   url: https://github.com/ayesc9000
-- title: Status
-  url: https://status.ayesc.ca/

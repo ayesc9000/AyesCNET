@@ -1,33 +1,53 @@
+/*
+AyesCNET
+Copyright (C) 2024  Liam "AyesC" Hogan
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
 .highlight {
-	background-color: #101010;
-	border: 1px solid #333;
-	padding: 0.5rem;
-	margin: 1rem;
+  background-color: #101010;
+  border: 1px solid #333;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
 code, .highlighter-rouge {
-	background-color: #232323;
-	border: 1px solid #333;
-	border-radius: 5px;
-	padding: 1px;
-	padding-left: 3px;
-	padding-right: 3px;
+  background-color: #232323;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .highlight pre {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .highlight table td {
-	padding: 5px;
+  padding: 5px;
 }
 
 .highlight table pre {
-	margin: 0;
+  margin: 0;
 }
 
-.highlight, .highlight .w {
+.highlight,
+.highlight .w {
   color: #cbcbcb;
 }
 
@@ -59,7 +79,9 @@ code, .highlighter-rouge {
   color: #0000FF;
 }
 
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2,
+.highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr,
+.highlight .s1, .highlight .ss {
   color: #b85c05;
 }
 

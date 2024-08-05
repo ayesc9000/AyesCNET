@@ -1,0 +1,10 @@
+<aside>
+  <span id="aside-header">Recent posts:</span>
+  {% for post in site.posts limit:6 %}
+  <div class="aside-post">
+    <a class="aside-link" href="{{ post.url }}">{{ post.title }}</a>
+    <span class="block">{{ post.date | date: "%A, %B %d, %Y" }}</span>
+    <span class="block">Posted in {{ post.category }}</span>
+  </div>
+  {% endfor %}
+</aside>

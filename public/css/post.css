@@ -1,4 +1,4 @@
-<!--
+/*
 AyesCNET
 Copyright (C) 2024  Liam "AyesC" Hogan
 
@@ -15,32 +15,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
--->
+*/
 
-<!DOCTYPE html>
-<html>
+#post-title {
+  margin-bottom: 8px;
+}
 
-<head>
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link href="/public/css/main.css" rel="stylesheet">
-  <link rel="icon" href="/public/image/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-</head>
+#post-details {
+  display: block;
+  margin-bottom: 16px;
+}
 
-<body>
-  {% include header.html %}
-
-  <main>
-    {% include aside.html %}
-
-    <article>
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </article>
-  </main>
-
-  {% include footer.html %}
-</body>
-
-</html>
+#post-tagline {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}

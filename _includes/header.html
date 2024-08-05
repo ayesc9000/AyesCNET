@@ -1,6 +1,13 @@
-<link rel="stylesheet" href="/public/css/code.css" />
-<link rel="stylesheet" href="/public/css/main.css" />
-<link rel="stylesheet" href="/public/css/blog.css" />
-<link rel="icon" href="/public/image/favicon.ico" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
+<header>
+  <!--<div id="topbar">
+    <span class="block"></span>
+  </div>-->
+  <div id="logo">
+    <span id="logo-text">AYESC</span>
+  </div>
+  <nav>
+    {% for page in site.data.pages %}
+    <a href="{{ page.url }}" class="navbtn">{{ page.title }}</a>
+    {% endfor %}
+  </nav>
+</header>

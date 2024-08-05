@@ -1,34 +1,49 @@
-<!-- 
-	Copyright (C) Liam "AyesC" Hogan 2023
+<!--
+AyesCNET
+Copyright (C) 2024  Liam "AyesC" Hogan
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<title>{{ page.title }} - AyesC</title>
-	{% include header.html %}
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link href="/public/css/main.css" rel="stylesheet">
+  <link href="/public/css/post.css" rel="stylesheet">
+  <link rel="icon" href="/public/image/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
 </head>
+
 <body>
-	{% include navbox.html %}
+  {% include header.html %}
 
-	<div id="container">
-		<div id="content">
-			<span id="content-title">{{ page.title }}</span>
-			<span id="content-date">Posted on {{ page.date | date: "%d/%m/%Y at %I:%M %p %Z" }}</span>
-			<div id="content-categories">
-				{% for category in page.categories %}
-					<span class="content-category">{{ category }}</span>
-				{% endfor %}
-			</div>
-			<hr>
-	
-			{{ content }}
-	
-			<hr>
-			
-			{% include footer.html %}
-		</div>
-	</div>
+  <main>
+    {% include aside.html %}
+
+    <article>
+      <h1 id="post-title">{{ page.title }}</h1>
+      <span id="post-details">Published on {{ page.date | date: "%d/%m/%Y" }} under {{ page.category }}</span>
+      <span id="post-tagline">From the {{ page.tagline }} department:</span>
+      {{ content }}
+    </article>
+  </main>
+
+  {% include footer.html %}
 </body>
-</html>
 
+</html>
