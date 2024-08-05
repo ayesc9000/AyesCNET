@@ -6,12 +6,12 @@
 			"request": "launch",
 			"name": "Start Jekyll",
 			"console": "integratedTerminal",
-			"runtimeExecutable": "jekyll",
-			"args": ["serve"],
+			"runtimeExecutable": "bundle",
+			"args": ["exec", "jekyll", "serve"],
 			"env": {
-				"CF_PAGES_BRANCH": "Not applicable",
-				"CF_PAGES_COMMIT_SHA": "Not applicable",
-				"CF_PAGES_DEPLOY_LOC": "Local VS Code debugging session"
+				"GIT_BRANCH": "Not applicable",
+				"GIT_SHA1": "Not applicable",
+				"BUILDER_IDENT": "Local PC"
 			}
 		}
 	]
