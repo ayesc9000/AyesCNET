@@ -4,10 +4,10 @@ layout: default
 title: About
 ---
 
-<p>I'm a senior year high school student, preparing to start college. I work on
+I'm a senior year high school student, preparing to start college. I work on
 small software projects as a hobby, and I have a passion for all things technology
-and engineering related.</p>
+and engineering related.
 
-<p>I'm currently working on my Discord bot Onyix. It's written in C# using dsharpplus.
+I'm currently working on my Discord bot Onyix. It's written in C# using dsharpplus.
 I might revive some of my older projects in the future, but I can't be bothered
-to right now :p</p>
+to right now :p

@@ -5,4 +5,4 @@ title: Contact
 ---
 
 If you would like to reach out to me, then you can contact me at my public email:
-<a href="mailto:ayesc@ayesc.ca">ayesc@ayesc.ca</a>
+[ayesc@ayesc.ca](mailto:ayesc@ayesc.ca)
