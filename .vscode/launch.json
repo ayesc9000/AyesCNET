@@ -7,12 +7,7 @@
 			"name": "Start Jekyll",
 			"console": "integratedTerminal",
 			"runtimeExecutable": "bundle",
-			"args": ["exec", "jekyll", "serve"],
-			"env": {
-				"GIT_BRANCH": "Not applicable",
-				"GIT_SHA1": "Not applicable",
-				"BUILDER_IDENT": "Local PC"
-			}
+			"args": ["exec", "jekyll", "serve"]
 		}
 	]
 }
