@@ -1,5 +1,5 @@
 _site
+.sass-cache
 .jekyll-cache
-
-# Posts are temporarily exempt; this will be removed in the future
-_posts
+.jekyll-metadata
+vendor

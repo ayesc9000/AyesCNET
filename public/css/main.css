@@ -1,107 +1,157 @@
-/* -- Global -- */
-
-@font-face {
-	font-family: "Merriweather";
-	src: url('/public/fonts/Merriweather-Regular.ttf'),
-		 url('/public/fonts/Merriweather-Black.ttf'),
-		 url('/public/fonts/Merriweather-BlackItalic.ttf'),
-		 url('/public/fonts/Merriweather-Bold.ttf'),
-		 url('/public/fonts/Merriweather-BoldItalic.ttf'),
-		 url('/public/fonts/Merriweather-Italic.ttf'),
-		 url('/public/fonts/Merriweather-Light.ttf'),
-		 url('/public/fonts/Merriweather-LightItalic.ttf');
+* {
+  box-sizing: border-box;
 }
 
-html, body {
-	color: #DDD;
-	background-color: #000;
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: Merriweather, serif;
-	font-size: 14px;
+html {
+  background: repeating-conic-gradient(#080808 0% 25%, #151515 0% 50%) 50% / 20px 20px;
+  font-family: Tahoma, Helvetica, Geneva, Arial, sans-serif;
+  font-size: 12px;
 }
 
-hr {
-	border: 2px solid #333;
-	margin-top: 40px;
-	margin-bottom: 40px;
+body {
+  width: 1024px;
+  margin: 10px auto 50px auto;
+  border: 1px dotted #858585;
+  border-radius: 2px;
+  box-shadow: 0 0 25px #000;
+  background-color: #111;
+  color: #fff;
 }
 
-a {
-	color: #FFF;
+nav {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  border-color: #858585;
+  border-width: 1px 0 1px 0;
+  border-style: dotted none dotted none;
 }
 
-a:hover {
-	color: #7dc2f7;
+main {
+  display: flex;
 }
 
-/* -- Navbox -- */
-
-#navbox, #navbox-title .navbox-item {
-	font-family: Consolas, monospace;
+article {
+  float: left;
+  width: 80%;
+  padding: 10px 10px 25px 10px;
+  box-shadow: 0 0 4px inset #000000b9;
+  background-color: #c5bfa6;
+  color: #000;
+  overflow-wrap: break-word;
 }
 
-#navbox {
-	background-color: #1c1c1c;
-	width: 250px;
-	height: 100%;
-	position: fixed;
-	float: left;
+section {
+  margin-bottom: 10px;
+  padding: 0 10px 10px 10px;
+  box-shadow: 0 0 4px #00000063;
+  border-radius: 5px 5px 0 0;
+  background-color: #dfdfdf;
 }
 
-#navbox-list {
-	margin: 0;
-	padding: 15px;
-	display: block;
-	list-style-type: none;
-	overflow: auto;
+section h2 {
+  margin: 0 -10px 5px -10px;
+  padding: 5px 5px 6px 10px;
+  box-shadow: 0 0 8px inset #00000063;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(0deg, #404343 45%, #4d5050 55%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-#navbox-title {
-	margin-top: 50px;
-	margin-bottom: 40px;
-	display: block;
-	font-size: 44px;
-	text-align: center;
-	text-decoration: none;
+section p {
+  margin: 14px 6px 6px 6px;
 }
 
-.navbox-item {
-	margin-left: 16px;
-	margin-bottom: 18px;
-	font-size: 18px;
+aside {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  box-shadow: 0 0 8px inset #00000063;
+  border-right: 1px dotted #404343;
+  background-color: #1d1f1f;
 }
 
-/* -- Content -- */
-
-#container {
-	margin-left: 250px;
-	overflow: auto;
+footer {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-top: 1px dotted #858585;
+  background-color: #404343;
+  color: #bbb;
 }
 
-#content {
-	max-width: 950px;
-	margin: auto;
-	padding: 50px;
+#topbar {
+  padding: 4px 0 5px 5px;
+  border-bottom: 1px dotted #858585;
+  background-color: #404343;
+  font-size: 12px;
 }
 
-#content-title {
-	margin-top: 30px;
-	margin-bottom: 100px;
-	display: block;
-	text-align: center;
-	font-size: 55px;
-	font-weight: 800;
+#logo {
+  height: 92px;
+  box-shadow: 0 0 10px inset #000;
+  background-color: #c75d36;
 }
 
-/* -- Footer -- */
+.navbtn {
+  float: left;
+  width: 20%;
+  padding-top: 7px;
+  box-shadow: 0 0 5px inset #383838;
+  background-color: #404343;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-#footer-text {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	margin-top: 35px;
-	text-align: center;
+.navbtn:hover {
+  background: repeating-conic-gradient(#888 0% 25%, #85692c 0% 50%) 50% / 2px 2px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-link {
+  color: #bbb;
+}
+
+.footer-link:hover {
+  color: #bbb;
+}
+
+.warning {
+  border-color: #f56d05;
+}
+
+.warning h2 {
+  background: linear-gradient(0deg, #f56d05 45%, #ff7c17 55%);
+}
+
+#aside-header {
+  display: block;
+  margin: 5px;
+  font-weight: 700;
+}
+
+.aside-post {
+  margin: 10px 5px 10px 5px;
+}
+
+.aside-link {
+  color: #c77325;
+  text-decoration: none;
+}
+
+.aside-link:hover {
+  text-decoration: underline;
+}
+
+.aside-text {
+  display: block;
 }

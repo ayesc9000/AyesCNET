@@ -1,27 +1,28 @@
 <!-- 
-	Copyright (C) Liam "AyesC" Hogan 2023
+  Copyright (C) Liam "AyesC" Hogan 2023
 -->
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>{{ page.title }} - AyesC</title>
-	{% include header.html %}
-</head>
-<body>
-	{% include navbox.html %}
+<html>
 
-	<div id="container">
-		<div id="content">
-			<span id="content-title">{{ page.title }}</span>
-			<hr>
-	
-			{{ content }}
-	
-			<hr>
-			
-			{% include footer.html %}
-		</div>
-	</div>
+<head>
+  <title>{{ page.title }} - AyesC</title>
+  <link href="/public/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  {% include header.html %}
+
+  <main>
+    {% include aside.html %}
+
+    <article>
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </article>
+  </main>
+
+  {% include footer.html %}
 </body>
+
 </html>

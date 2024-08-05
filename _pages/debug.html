@@ -1,6 +1,6 @@
 ---
 permalink: /debug
-layout: simple
+layout: default
 title: Debugging information
 ---
 
@@ -10,19 +10,19 @@ title: Debugging information
 		<td><code>{{ site.time }}</code></td>
 	</tr>
 	<tr>
+		<td><b>Built by</b></td>
+		<td><code>{{ site.env.BUILDER_IDENT }}</code></td>
+	</tr>
+	<tr>
 		<td><b>Git repository</b></td>
 		<td><code>{{ site.repo }}</code></td>
 	</tr>
 	<tr>
 		<td><b>Git branch</b></td>
-		<td><code>{{ site.env.CF_PAGES_BRANCH }}</code></td>
+		<td><code>{{ site.env.GIT_BRANCH }}</code></td>
 	</tr>
 	<tr>
-		<td><b>Git commit SHA1</b></td>
-		<td><code>{{ site.env.CF_PAGES_COMMIT_SHA }}</code></td>
-	</tr>
-	<tr>
-		<td><b>Deployment target</b></td>
-		<td><code>{{ site.env.CF_PAGES_DEPLOY_LOC }}</code></td>
+		<td><b>Git commit</b></td>
+		<td><code>{{ site.env.GIT_SHA1 }}</code></td>
 	</tr>
 </table>
