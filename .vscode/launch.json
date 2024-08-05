@@ -1,13 +1,17 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "node",
-			"request": "launch",
-			"name": "Start Jekyll",
-			"console": "integratedTerminal",
-			"runtimeExecutable": "bundle",
-			"args": ["exec", "jekyll", "serve"]
-		}
-	]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Jekyll",
+      "console": "integratedTerminal",
+      "runtimeExecutable": "bundle",
+      "args": [
+        "exec",
+        "jekyll",
+        "serve"
+      ]
+    }
+  ]
 }
