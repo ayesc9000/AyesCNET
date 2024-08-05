@@ -3,8 +3,8 @@
   {% for post in site.posts limit:8 %}
   <div class="aside-post">
     <a class="aside-link" href="{{ post.url }}">{{ post.title }}</a>
-    <span class="aside-text">Posted in {{ post.category }}</span>
-    <span class="aside-text">{{ post.date | date: "%A, %B %d, %Y" }}</span>
+    <span class="block">{{ post.date | date: "%A, %B %d, %Y" }}</span>
+    <span class="block">Posted in {{ post.category }}</span>
   </div>
   {% endfor %}
 </aside>

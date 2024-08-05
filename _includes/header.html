@@ -1,6 +1,10 @@
 <header>
-  <div id="topbar">topbar</div>
-  <div id="logo"></div>
+  <div id="topbar">
+    <span class="block">...</span>
+  </div>
+  <div id="logo">
+    <span id="logo-text">AYESC</span>
+  </div>
   <nav>
     {% for page in site.data.pages %}
     <a href="{{ page.url }}" class="navbtn">{{ page.title }}</a>

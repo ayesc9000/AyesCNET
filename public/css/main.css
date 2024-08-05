@@ -89,6 +89,10 @@ footer {
   color: #bbb;
 }
 
+.block {
+  display: block;
+}
+
 #topbar {
   padding: 4px 0 5px 5px;
   border-bottom: 1px dotted #858585;
@@ -100,6 +104,19 @@ footer {
   height: 92px;
   box-shadow: 0 0 10px inset #000;
   background-color: #c75d36;
+  text-align: center;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+#logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 160px;
+  text-shadow: 10px 10px 18px #000000ea;
+  font-style: italic;
+  font-weight: 600;
+  color: #eee;
 }
 
 .navbtn {
@@ -156,8 +173,4 @@ footer {
 
 .aside-link:hover {
   text-decoration: underline;
-}
-
-.aside-text {
-  display: block;
 }
