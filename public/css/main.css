@@ -86,6 +86,11 @@ section h2 {
   letter-spacing: 1px;
 }
 
+section h3, section a, section p {
+  margin: 10px 10px 10px 5px;
+  display: block;
+}
+
 section p {
   margin: 14px 6px 6px 6px;
 }

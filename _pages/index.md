@@ -16,12 +16,4 @@ other developments.
 If you are interested in hiring me, check out my latest résumé: [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
-{% for post in site.posts limit:1 %}
-# Latest Post
-
-## {{ post.title }}
-
-{{ post.preview }}
-
-[Read more...]({{ post.url }})
-{% endfor %}
+{% include latestpost.html %}
