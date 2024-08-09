@@ -122,7 +122,7 @@ footer {
 #logo {
   height: 92px;
   box-shadow: 0 0 10px inset #000;
-  background-color: #c75d36;
+  background-color: #ca6946;
   text-align: center;
   line-height: 80px;
   overflow: hidden;
@@ -167,11 +167,11 @@ footer {
 }
 
 .warning {
-  border-color: #f56d05;
+  border-color: #ca6946;
 }
 
 .warning h2 {
-  background: linear-gradient(0deg, #f56d05 45%, #ff7c17 55%);
+  background: linear-gradient(0deg, #b6684b 45%, #ca6946 55%);
 }
 
 #aside-header {
@@ -186,7 +186,7 @@ footer {
 }
 
 .aside-link {
-  color: #c77325;
+  color: #ca6946;
   text-decoration: none;
 }
 
