@@ -9,3 +9,11 @@ plugins:
   - jekyll-feed
 include:
   - _pages
+exclude:
+  - .jekyll-cache
+  - .vscode
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
