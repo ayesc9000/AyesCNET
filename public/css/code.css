@@ -17,20 +17,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-.highlight {
-  background-color: #101010;
-  border: 1px solid #333;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
-code, .highlighter-rouge {
-  background-color: #232323;
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 1px;
-  padding-left: 3px;
-  padding-right: 3px;
+.highlighter-rouge div {
+  background-color: #bdb79e;
+  border-radius: 3px;
+  box-shadow: 0 0 6px inset #0000009c;
+  padding: 12px;
 }
 
 .highlight pre {
@@ -48,43 +39,43 @@ code, .highlighter-rouge {
 
 .highlight,
 .highlight .w {
-  color: #cbcbcb;
+  color: #1f1f1f;
 }
 
 .highlight .cp {
-  color: #CC00A3;
+  color: #b80894;
 }
 
 .highlight .cs {
-  color: #CC00A3;
+  color: #b80894;
 }
 
 .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1 {
-  color: #339847;
+  color: #05851c;
 }
 
 .highlight .kc {
-  color: #007fc3;
+  color: #0973ac;
 }
 
 .highlight .kd {
-  color: #0000FF;
+  color: #0c0c9b;
 }
 
 .highlight .kr {
-  color: #007575;
+  color: #009292;
 }
 
 .highlight .k, .highlight .kn, .highlight .kp, .highlight .kt, .highlight .kv {
-  color: #0000FF;
+  color: #0c0c9b;
 }
 
 .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2,
 .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr,
 .highlight .s1, .highlight .ss {
-  color: #b85c05;
+  color: #ac590b;
 }
 
 .highlight .nb, .highlight .bp {
-  color: #5a8ed8;
+  color: #0973ac;
 }
