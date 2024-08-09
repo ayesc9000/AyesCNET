@@ -1,0 +1,6 @@
+<section>
+  <h2>{{ post.title }}</h2>
+  <p style="font-weight: 600;">Posted on {{ post.date | date: "%A, %B %d, %Y" }} in {{ post.category }}</p>
+  <p>{{ post.preview }}</p>
+  <a href="{{ post.url }}">Read more...</a>
+</section>
