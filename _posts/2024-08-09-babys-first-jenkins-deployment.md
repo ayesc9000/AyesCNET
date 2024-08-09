@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Baby's first Jenkins deployment with Jekyll
+title: Baby's first Jenkins deployment
 category: Development
 tags:
 tagline: total automation
