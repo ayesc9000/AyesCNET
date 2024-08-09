@@ -4,6 +4,11 @@ title: Baby's first Jenkins deployment with Jekyll
 category: Development
 tags:
 tagline: total automation
+preview: Recently I have taken up an interest in moving my deployments back to
+  my own hardware, partly because of my stubborn reasoning. I decided to move my
+  website back onto my VPS and I chose to automate its deployment using Jenkins.
+  I also have plans to deploy some more software in the near future, but since
+  I'm relatively new to Jenkins I decided to start a bit smaller for now.
 ---
 
 Recently I have taken up an interest in moving my deployments back to my own
