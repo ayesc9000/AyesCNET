@@ -48,7 +48,7 @@ I chose to start with a freestyle project since this project won't be very
 complicated. I configured the git repository under *Source Code Management* to
 point to my website's git repository.
 
-(Image of git repository settings)
+![A screenshot of the Git repository settings in a Jenkins project](/public/uploads/2024-08-09-babys-first-jenkins-deployment/git.png)
 
 However, the problem is that Jenkins doesn't know when the repository has been
 updated. If you are using GitHub, it is possible to set up a webhook and use the
@@ -62,7 +62,7 @@ changes. The schedule uses syntax similar to cron, and is relatively simple to
 figure out. Or you can steal mine from the image below, which polls usually
 every hour but uses the hash (H) symbol to balance the load with other jobs.
 
-(Image of SCM polling settings)
+![A screenshot of the SCM repository polling settings in a Jenkins project](/public/uploads/2024-08-09-babys-first-jenkins-deployment/pollscm.png)
 
 The benefit of doing this over just rebuilding the site periodically is that
 Jenkins will only start a new build if the current head has changed since the
