@@ -37,6 +37,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     {% include aside.html %}
 
     <article>
+      <div id="post-toc">
+        {% toc %}
+      </div>
       <h1 id="post-title">{{ page.title }}</h1>
       <span id="post-details">Published on {{ page.date | date: "%d/%m/%Y" }} under {{ page.category }}</span>
       {% if page.hidden %}
@@ -46,9 +49,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
       <span id="post-tagline">
         From the 
         {% if page.tagline %}
-        {{ page.tagline }}
+          {{ page.tagline }}
         {% else %}
-        "I forgot to write a tagline"
+          "I forgot to write a tagline"
         {% endif %}
         department:
       </span>

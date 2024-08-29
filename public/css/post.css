@@ -21,15 +21,19 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   margin-bottom: 8px;
 }
 
+#post-toc {
+  display: inline-block;
+  float: right;
+  margin: 0 0 15px 15px;
+  width: 325px;
+  background-color: #b9ae9e;
+  border: 1px dotted #d17639;
+  border-left: 5px solid #d17639;
+}
+
 #post-details {
   display: block;
   margin-bottom: 16px;
-}
-
-#post-tagline {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
 }
 
 #post-hidden {
@@ -39,4 +43,10 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   border: 1px dotted #d17639;
   border-left: 5px solid #d17639;
   font-style: italic;
+}
+
+#post-tagline {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
 }
