@@ -1,8 +1,7 @@
 <section>
+  {% assign post = site.posts | find_exp: "post", "post.hidden != true" %}
   <h2>Latest Post</h2>
-  {% for post in site.posts limit:1 %}
   <h3>{{ post.title }}</h3>
   <p>{{ post.preview }}</p>
   <a href="{{ post.url }}">Read more...</a>
-  {% endfor %}
 </section>

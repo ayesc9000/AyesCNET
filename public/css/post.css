@@ -31,3 +31,12 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   margin-top: 10px;
   font-weight: 600;
 }
+
+#post-hidden {
+  display: block;
+  padding: 10px;
+  background-color: #b9ae9e;
+  border: 1px dotted #d17639;
+  border-left: 5px solid #d17639;
+  font-style: italic;
+}
