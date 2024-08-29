@@ -28,10 +28,6 @@ html {
   font-size: 12px;
 }
 
-h1 {
-  font-size: 24px;
-}
-
 body {
   width: 1024px;
   margin: 10px auto 50px auto;
@@ -67,6 +63,17 @@ article {
 
 img {
   width: 100%;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  margin: 20px 0 20px 0;
+  background: #858585;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 section {

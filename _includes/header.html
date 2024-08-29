@@ -1,13 +1,15 @@
 <header>
-  <!--<div id="topbar">
+  <!--
+  <div id="topbar">
     <span class="block"></span>
-  </div>-->
+  </div>
+  -->
   <div id="logo">
     <span id="logo-text">AYESC</span>
   </div>
   <nav>
     {% for page in site.data.pages %}
-    <a href="{{ page.url }}" class="navbtn">{{ page.title }}</a>
+      <a href="{{ page.url }}" class="navbtn">{{ page.title }}</a>
     {% endfor %}
   </nav>
 </header>

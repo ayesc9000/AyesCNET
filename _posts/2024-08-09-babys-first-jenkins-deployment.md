@@ -2,7 +2,6 @@
 layout: post
 title: Baby's first Jenkins deployment
 category: Development
-tags:
 tagline: total automation
 preview: Recently I have taken up an interest in moving my deployments back to
   my own hardware, partly because of my stubborn reasoning. I decided to move my
