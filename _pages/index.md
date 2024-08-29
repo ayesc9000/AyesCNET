@@ -12,8 +12,6 @@ I spend most of my time lurking online on sites like Slashdot, but I occasionall
 write a post about something I am working on or my opinions on technology news and
 other developments.
 
-{% for post in site.tags['resume'] limit:1 %}
-If you are interested in hiring me, check out my latest résumé: [{{ post.title }}]({{ post.url }})
-{% endfor %}
-
 {% include latestpost.html %}
+
+{% include latestresume.html %}
