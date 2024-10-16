@@ -11,6 +11,11 @@ preview: Recently I have taken up an interest in moving my deployments back to
   I'm relatively new to Jenkins I decided to start a bit smaller for now.
 ---
 
+***Update 15/10/2024: I moved the site back to Cloudflare pages for a bit since
+I need to do infrastructure changes to the server. I needed a better solution
+than what I came up with below and I'll write up a cool post about it once I
+finish the upgrades.***
+
 Recently I have taken up an interest in moving my deployments back to my own
 hardware, partly because of my stubborn reasoning. I decided to move my website
 back onto my VPS and I chose to automate its deployment using Jenkins. I also
