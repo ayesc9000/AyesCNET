@@ -13,5 +13,3 @@ write a post about something I am working on or my opinions on technology news a
 other developments.
 
 {% include latestpost.html %}
-
-{% include latestresume.html %}
