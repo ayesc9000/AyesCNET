@@ -89,7 +89,7 @@ gem install bundler
 ```
 
 I'm using Debian 12 Bookworm here, but you can consult the
-(Ruby docs)[https://www.ruby-lang.org/en/documentation/installation/] for
+[Ruby docs](https://www.ruby-lang.org/en/documentation/installation/) for
 assistance on installing Ruby on other distros.
 
 The full shell script I wrote for the build step is below:
