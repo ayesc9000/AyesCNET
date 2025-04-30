@@ -34,14 +34,14 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     {% include aside.html %}
 
     <article>
-      <div id="post-toc">{% toc %}</div>
-      <h1 id="post-title">{{ page.title }}</h1>
-      <span id="post-details">Published on {{ page.date | date: "%d/%m/%Y" }} under {{ page.category }}</span>
+      <div id="article-toc">{% toc %}</div>
+      <h1 id="article-title">{{ page.title }}</h1>
+      <span id="article-details">Published on {{ page.date | date: "%d/%m/%Y" }} under {{ page.category }}</span>
       {% if page.hidden %}
-        <span id="post-hidden">This is a hidden post and is not listed in public feeds.</span>
+        {% include warning.html title="Notice" content="This is a hidden post and is not listed publicly." %}
       {% endif %}
       <hr>
-      <span id="post-tagline">
+      <span id="article-tagline">
         From the
         {% if page.tagline %}
           {{ page.tagline }}
