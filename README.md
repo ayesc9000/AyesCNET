@@ -7,8 +7,9 @@ as well.
 The website uses Jekyll to build, and requires you to have Ruby installed.
 
 Follow the Jekyll setup instructions over on their website to set up Jekyll on your
-system, then come back here and run `bundle exec jekyll serve` OR FOR VS CODE USERS
-press F5 to automatically run Jekyll.
+system, then install bundle and all necessary packages with `gem install bundle` followed by `bundle`.
+
+You can start Jekyll with `bundle exec jekyll serve`, **Or if you are using VS Code** press F5 to run the included launch profile.
 
 # License
 
