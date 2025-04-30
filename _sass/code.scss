@@ -17,10 +17,12 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
+@use "constants.scss";
+
 .highlighter-rouge div {
-  background-color: #bdb79e;
+  background-color: constants.$section-background-colour;
+  box-shadow: constants.$shadow-inset;
   border-radius: 3px;
-  box-shadow: 0 0 6px inset #0000009c;
   padding: 12px;
 }
 
