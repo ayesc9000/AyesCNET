@@ -4,14 +4,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Start Jekyll",
+      "name": "Run Jekyll",
       "console": "integratedTerminal",
       "runtimeExecutable": "bundle",
       "args": [
         "exec",
         "jekyll",
         "serve"
-      ]
+      ],
     }
   ]
 }
