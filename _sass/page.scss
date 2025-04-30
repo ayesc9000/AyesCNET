@@ -1,6 +1,6 @@
 /*
 AyesCNET
-Copyright (C) 2024  Liam "AyesC" Hogan
+Copyright (C) 2025  Liam "AyesC" Hogan
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,99 +19,27 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 @use "constants.scss";
 
+/* Main page elements */
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  background: repeating-conic-gradient(#080808 0% 25%, #151515 0% 50%) 50% / 20px 20px;
-  font-family: constants.$primary-font-stack;
-  font-size: 12px;
+  background: constants.$page-gradient;
+  font-family: constants.$font-stack;
+  font-size: constants.$font-size;
 }
 
 body {
   width: 1024px;
   margin: 10px auto 50px auto;
-  border: 1px dotted #858585;
-  border-radius: 2px;
   box-shadow: 0 0 25px #000;
-  background-color: #111;
-  color: #fff;
+  color: constants.$light-text-colour;
 }
 
 main {
   display: flex;
-}
-
-nav {
-  display: flex;
-  width: 100%;
-  height: 30px;
-  border-color: #858585;
-  border-width: 1px 0 1px 0;
-  border-style: dotted none dotted none;
-}
-
-article {
-  float: left;
-  width: 80%;
-  padding: 10px 10px 25px 10px;
-  box-shadow: 0 0 4px inset #000000b9;
-  background-color: #d3d0c6;
-  color: #000;
-  overflow-wrap: break-word;
-}
-
-aside {
-  float: left;
-  width: 20%;
-  padding: 5px;
-  box-shadow: 0 0 8px inset #00000063;
-  border-right: 1px dotted #404343;
-  background-color: #1d1f1f;
-}
-
-section {
-  margin: 20px 0 10px 0;
-  padding: 0 10px 10px 10px;
-  box-shadow: 0 0 4px #00000063;
-  border-radius: 5px 5px 0 0;
-  background-color: #dfdfdf;
-
-  h2 {
-    margin: 0 -10px 5px -10px;
-    padding: 5px 5px 6px 10px;
-    box-shadow: 0 0 8px inset #00000063;
-    border-radius: 5px 5px 0 0;
-    background: linear-gradient(0deg, #404343 45%, #4d5050 55%);
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  h3, a, p {
-    margin: 10px 10px 10px 5px;
-    display: block;
-  }
-
-  p {
-    margin: 14px 6px 6px 6px;
-  }
-}
-
-footer {
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border-top: 1px dotted #858585;
-  background-color: #404343;
-  color: #bbb;
-}
-
-img {
-  width: 100%;
 }
 
 hr {
@@ -129,17 +57,13 @@ h1 {
   display: block;
 }
 
-#topbar {
-  padding: 4px 0 5px 5px;
-  border-bottom: 1px dotted #858585;
-  background-color: #404343;
-  font-size: 12px;
-}
+/* Logo */
 
 #logo {
   height: 92px;
-  box-shadow: 0 0 10px inset #000;
-  background-color: #ca6946;
+  box-shadow: 0 0 20px inset #000000b7;
+  border-radius: 5px 5px 0 0;
+  background-color: constants.$highlight-colour;
   text-align: center;
   line-height: 80px;
   overflow: hidden;
@@ -152,15 +76,22 @@ h1 {
   text-shadow: 10px 10px 18px #000000ea;
   font-style: italic;
   font-weight: 600;
-  color: #eee;
+  color: constants.$light-text-colour;
+}
+
+/* Navigation bar */
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 30px;
 }
 
 .navbtn {
   width: 100%;
   padding-top: 7px;
-  box-shadow: 0 0 5px inset #383838;
-  background-color: #404343;
-  color: #fff;
+  background: constants.$bar-gradient;
+  color: constants.$light-text-colour;
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
@@ -169,26 +100,63 @@ h1 {
 }
 
 .navbtn:hover {
-  background: repeating-conic-gradient(#888 0% 25%, #85692c 0% 50%)
-    50% / 2px 2px;
-  color: #fff;
-  text-decoration: underline;
+  box-shadow: 0 0 5px inset #303030;
+  background: constants.$highlight-bar-gradient;
 }
 
-.footer-link {
-  color: #bbb;
+/* Article */
+
+article {
+  float: left;
+  width: 80%;
+  padding: 10px 10px 25px 10px;
+  box-shadow: constants.$shadow-inset;
+  background-color: constants.$article-background-colour;
+  color: #000;
+  overflow-wrap: break-word;
+
+  img {
+    width: 100%;
+    box-shadow: constants.$shadow-outset;
+  }
 }
 
-.footer-link:hover {
-  color: #bbb;
+#article-title {
+  margin-bottom: 8px;
 }
 
-.warning {
-  border-color: #ca6946;
+#article-details {
+  display: block;
+  margin-bottom: 16px;
 }
 
-.warning h2 {
-  background: linear-gradient(0deg, #b6684b 45%, #ca6946 55%);
+#article-tagline {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#article-toc {
+  float: right;
+  width: 280px;
+  padding: 0 15px 0 0;
+  margin: 8px;
+  box-shadow: constants.$shadow-outset;
+  background-color: constants.$section-background-colour;
+
+  ul {
+    padding: 0 0 0 27px;
+  }
+}
+
+/* Article aside */
+
+aside {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  box-shadow: 0 0 8px inset #00000063;
+  background-color: #1d1f1f;
 }
 
 #aside-header {
@@ -203,10 +171,69 @@ h1 {
 }
 
 .aside-link {
-  color: #ca6946;
+  color: constants.$highlight-colour;
   text-decoration: none;
 }
 
 .aside-link:hover {
   text-decoration: underline;
+}
+
+/* Sections */
+
+section {
+  display: flow-root;
+  margin: 20px 0 10px 0;
+  padding: 0 10px 10px 10px;
+  box-shadow: constants.$shadow-outset;
+  border-radius: 5px 5px 0 0;
+  background-color: constants.$section-background-colour;
+
+  h2 {
+    margin: 0 -10px 5px -10px;
+    padding: 5px 5px 6px 10px;
+    border-radius: 5px 5px 0 0;
+    background: constants.$bar-gradient;
+    color: constants.$light-text-colour;
+    font-size: constants.$font-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h3, a, p {
+    margin: 10px 10px 10px 5px;
+    display: block;
+  }
+
+  p {
+    margin: 14px 6px 6px 6px;
+  }
+}
+
+.warning {
+  border-color: constants.$highlight-colour;
+}
+
+.warning h2 {
+  background: constants.$warning-bar-gradient
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  background: constants.$bar-gradient;
+  color: constants.$dim-text-colour;
+}
+
+.footer-link {
+  color: constants.$dim-text-colour;
+}
+
+.footer-link:hover {
+  color: constants.$dim-text-colour;
 }

@@ -1,6 +1,6 @@
 /*
 AyesCNET
-Copyright (C) 2024  Liam "AyesC" Hogan
+Copyright (C) 2025  Liam "AyesC" Hogan
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,4 +17,23 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-$primary-font-stack: Tahoma, Helvetica, Geneva, Arial, sans-serif;
+/* Fonts */
+$font-stack: Tahoma, Helvetica, Geneva, Arial, sans-serif;
+$font-size: 12px;
+
+/* Gradients */
+$page-gradient: repeating-conic-gradient(#080808 0% 25%, #151515 0% 50%) 50% / 20px 20px;
+$bar-gradient: linear-gradient(0deg, #404343 47%, #4d5050 53%);
+$highlight-bar-gradient: linear-gradient(0deg, #b99d61 47%, #ac9158 53%);
+$warning-bar-gradient: linear-gradient(0deg, #b6684b 47%, #ca6946 53%);
+
+/* Colours */
+$highlight-colour: #ca6946;
+$light-text-colour: #eee;
+$dim-text-colour: #bbb;
+$article-background-colour: #d3d0c6;
+$section-background-colour: #dfdfdf;
+
+/* Box shadows */
+$shadow-inset: 0 0 4px inset #000000b9;
+$shadow-outset: 0 0 4px #000000b9;
