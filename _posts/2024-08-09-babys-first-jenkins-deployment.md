@@ -1,6 +1,9 @@
 ---
+# Baby's first Jenkins deployment © 2025 by Liam "AyesC" Hogan is licensed under CC-BY-ND 4.0 International.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 layout: post
 title: Baby's first Jenkins deployment
+author: Liam "AyesC" Hogan
 category: Development
 tagline: total automation
 preview: Recently I have taken up an interest in moving my deployments back to

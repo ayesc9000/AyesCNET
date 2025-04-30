@@ -12,11 +12,20 @@ press F5 to automatically run Jekyll.
 
 # License
 
-The source code of this website is licensed under the GNU General Public License
-v2.0. Refer to LICENSE.md for more information.
+**ATTENTION!** The licensing in this repository has changed recently. Please read
+the below very carefully!
 
-The contents of the website itself are yet to be licensed, but will receive a license
-in the future.
+The source code of this website is licensed under the GNU General Public License
+v2.0. Any files that contain no legal boilerplate and are not covered by the below
+license are assumed as GPLv2 licensed. Refer to LICENSE.md for more information
+about your freedoms in regards to the source code of this website.
+
+The written content of this website is licensed under the Creative Commons
+Attribution-NoDerivatives 4.0 International license. All files under the _pages
+and _posts folders are assumed to be under this license if not explicitly stated
+in the file header. Refer to
+[https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/)
+for more information about the rights and restrictions afforded by this license.
 
 # Contributing
 
