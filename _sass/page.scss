@@ -113,6 +113,7 @@ article {
   box-shadow: constants.$shadow-inset;
   background-color: constants.$article-background-colour;
   color: #000;
+  line-height: 150%;
   overflow-wrap: break-word;
 
   img {
