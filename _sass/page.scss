@@ -92,7 +92,6 @@ nav {
   padding-top: 7px;
   background: constants.$bar-gradient;
   color: constants.$light-text-colour;
-  font-size: 11px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -113,7 +112,7 @@ article {
   box-shadow: constants.$shadow-inset;
   background-color: constants.$article-background-colour;
   color: #000;
-  line-height: 150%;
+  line-height: 130%;
   overflow-wrap: break-word;
 
   img {
