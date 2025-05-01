@@ -21,9 +21,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 .highlighter-rouge div {
   background-color: constants.$section-background-colour;
-  box-shadow: constants.$shadow-inset;
-  border-radius: 3px;
+  box-shadow: constants.$shadow-outset;
   padding: 12px;
+  line-height: normal;
 }
 
 .highlight pre {
