@@ -77,6 +77,7 @@ h1 {
   font-style: italic;
   font-weight: 600;
   color: constants.$light-text-colour;
+  user-select: none;
 }
 
 /* Navigation bar */
