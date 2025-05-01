@@ -133,7 +133,7 @@ article {
 
 #article-tagline {
   display: block;
-  margin-top: 10px;
+  margin: 13px 0 13px 0;
   font-weight: 600;
 }
 
@@ -148,6 +148,13 @@ article {
   ul {
     padding: 0 0 0 27px;
   }
+}
+
+.embed {
+  width: 560px;
+  height: 315px;
+  margin: auto;
+  box-shadow: constants.$shadow-outset;
 }
 
 .copyright-icons {
